@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_004b73bf9446429c83cf266607fe6de6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_004b73bf9446429c83cf266607fe6de6" ></div>
+        
+</body>
+<script>    
+    
+            var map_004b73bf9446429c83cf266607fe6de6 = L.map(
+                "map_004b73bf9446429c83cf266607fe6de6",
+                {
+                    center: [43.2567, 76.9286],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7f6171fca1a4333ae07796bae2405ec = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var marker_02e2735baa0140eca9ac12f21db0e9d8 = L.marker(
+                [43.346669, 77.011392],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_c67dacfd92384d809f9572796e459bcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_02e2735baa0140eca9ac12f21db0e9d8.setIcon(icon_c67dacfd92384d809f9572796e459bcd);
+        
+    
+        var popup_72dfe5f286884981ab542f4f533c0baa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1179e52a62d746b29e25e9dd148a0bc5 = $(`<div id="html_1179e52a62d746b29e25e9dd148a0bc5" style="width: 100.0%; height: 100.0%;">Аэропорт Алматы</div>`)[0];
+            popup_72dfe5f286884981ab542f4f533c0baa.setContent(html_1179e52a62d746b29e25e9dd148a0bc5);
+        
+
+        marker_02e2735baa0140eca9ac12f21db0e9d8.bindPopup(popup_72dfe5f286884981ab542f4f533c0baa)
+        ;
+
+        
+    
+    
+            var marker_237d7d91b5974f83bf6e92645338ace5 = L.marker(
+                [43.231572, 76.975339],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_96114c407194409e87e03063d3d3e49e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_237d7d91b5974f83bf6e92645338ace5.setIcon(icon_96114c407194409e87e03063d3d3e49e);
+        
+    
+        var popup_f9f44a922b874989a8bb7728eed24670 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c23bee88f09547bda3d1015ecc931503 = $(`<div id="html_c23bee88f09547bda3d1015ecc931503" style="width: 100.0%; height: 100.0%;">Канатная дорога</div>`)[0];
+            popup_f9f44a922b874989a8bb7728eed24670.setContent(html_c23bee88f09547bda3d1015ecc931503);
+        
+
+        marker_237d7d91b5974f83bf6e92645338ace5.bindPopup(popup_f9f44a922b874989a8bb7728eed24670)
+        ;
+
+        
+    
+    
+            var marker_e3f1857c8ec24038b6ed950607254186 = L.marker(
+                [43.379101, 79.123192],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_ec02d066a18c4028bf776fd5356177b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e3f1857c8ec24038b6ed950607254186.setIcon(icon_ec02d066a18c4028bf776fd5356177b5);
+        
+    
+        var popup_a4bcafd9b1e148d8b40506ce5adfbae6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acac20bf56e34d8b91fdf649b4fac324 = $(`<div id="html_acac20bf56e34d8b91fdf649b4fac324" style="width: 100.0%; height: 100.0%;">Чарынский каньон</div>`)[0];
+            popup_a4bcafd9b1e148d8b40506ce5adfbae6.setContent(html_acac20bf56e34d8b91fdf649b4fac324);
+        
+
+        marker_e3f1857c8ec24038b6ed950607254186.bindPopup(popup_a4bcafd9b1e148d8b40506ce5adfbae6)
+        ;
+
+        
+    
+    
+            var marker_da990d3646484529ad5f0780148fdabe = L.marker(
+                [43.243233, 76.958774],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_cb99f29f791543d7a3265cb45b0d5418 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_da990d3646484529ad5f0780148fdabe.setIcon(icon_cb99f29f791543d7a3265cb45b0d5418);
+        
+    
+        var popup_ff0eaa020c504766b82dbeef7c322f78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b34d7c7c0ac45438afbed1f94b5174e = $(`<div id="html_2b34d7c7c0ac45438afbed1f94b5174e" style="width: 100.0%; height: 100.0%;">Дворец Республики</div>`)[0];
+            popup_ff0eaa020c504766b82dbeef7c322f78.setContent(html_2b34d7c7c0ac45438afbed1f94b5174e);
+        
+
+        marker_da990d3646484529ad5f0780148fdabe.bindPopup(popup_ff0eaa020c504766b82dbeef7c322f78)
+        ;
+
+        
+    
+    
+            var marker_36c74b6f64ed445495406b8a3f6a09e8 = L.marker(
+                [43.263956, 76.933454],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_f17a1a24d1954cb19f376301b02b4184 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_36c74b6f64ed445495406b8a3f6a09e8.setIcon(icon_f17a1a24d1954cb19f376301b02b4184);
+        
+    
+        var popup_135c9b666b914e4789b6bb2db8c210ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13c7ab409f664a45819c69e2c7793908 = $(`<div id="html_13c7ab409f664a45819c69e2c7793908" style="width: 100.0%; height: 100.0%;">Телебашня</div>`)[0];
+            popup_135c9b666b914e4789b6bb2db8c210ce.setContent(html_13c7ab409f664a45819c69e2c7793908);
+        
+
+        marker_36c74b6f64ed445495406b8a3f6a09e8.bindPopup(popup_135c9b666b914e4789b6bb2db8c210ce)
+        ;
+
+        
+    
+    
+            var marker_0b33095510a845e09dbe0bc67e1fd514 = L.marker(
+                [43.253056, 77.484722],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_48defdf878c3402d923400db7f76af5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0b33095510a845e09dbe0bc67e1fd514.setIcon(icon_48defdf878c3402d923400db7f76af5c);
+        
+    
+        var popup_a151ba9bfe974672a1e41c449764b01f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14706bd86ed3494082a07a04ad909977 = $(`<div id="html_14706bd86ed3494082a07a04ad909977" style="width: 100.0%; height: 100.0%;">Озеро Иссык</div>`)[0];
+            popup_a151ba9bfe974672a1e41c449764b01f.setContent(html_14706bd86ed3494082a07a04ad909977);
+        
+
+        marker_0b33095510a845e09dbe0bc67e1fd514.bindPopup(popup_a151ba9bfe974672a1e41c449764b01f)
+        ;
+
+        
+    
+    
+            var marker_d86e18a3bcef446b9b0d1ba47614a4e0 = L.marker(
+                [43.050556, 76.985],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_eabebf8359b24ac3b9baf3b62d8a6cd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d86e18a3bcef446b9b0d1ba47614a4e0.setIcon(icon_eabebf8359b24ac3b9baf3b62d8a6cd8);
+        
+    
+        var popup_bbd8e9e3a57743a19bbb37f93a5aa924 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b0704da3e7c4a35ab831115f0402ca4 = $(`<div id="html_0b0704da3e7c4a35ab831115f0402ca4" style="width: 100.0%; height: 100.0%;">Большое Алматинское озеро</div>`)[0];
+            popup_bbd8e9e3a57743a19bbb37f93a5aa924.setContent(html_0b0704da3e7c4a35ab831115f0402ca4);
+        
+
+        marker_d86e18a3bcef446b9b0d1ba47614a4e0.bindPopup(popup_bbd8e9e3a57743a19bbb37f93a5aa924)
+        ;
+
+        
+    
+    
+            var marker_1fdd78802da74bc7bdedb9e42ed1ac83 = L.marker(
+                [45.402428, 74.158389],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_5f22fa4260374ed586a5c04b985b66fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1fdd78802da74bc7bdedb9e42ed1ac83.setIcon(icon_5f22fa4260374ed586a5c04b985b66fd);
+        
+    
+        var popup_c929426599e841969ba375f77360c7b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c8b39585fab47ff9b6ad858984808c7 = $(`<div id="html_7c8b39585fab47ff9b6ad858984808c7" style="width: 100.0%; height: 100.0%;">Река Или</div>`)[0];
+            popup_c929426599e841969ba375f77360c7b4.setContent(html_7c8b39585fab47ff9b6ad858984808c7);
+        
+
+        marker_1fdd78802da74bc7bdedb9e42ed1ac83.bindPopup(popup_c929426599e841969ba375f77360c7b4)
+        ;
+
+        
+    
+    
+            var marker_12821c9e5f454a92bfe9c3532dc07c09 = L.marker(
+                [43.1575, 77.058611],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_047196fddc58411ab39ae0e5d34e3a9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_12821c9e5f454a92bfe9c3532dc07c09.setIcon(icon_047196fddc58411ab39ae0e5d34e3a9a);
+        
+    
+        var popup_9450f9408460493980ac411eed3b0bda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3df2d8b20784c0cb2e18dc1d53b8021 = $(`<div id="html_b3df2d8b20784c0cb2e18dc1d53b8021" style="width: 100.0%; height: 100.0%;">Высокогорный каток Медео</div>`)[0];
+            popup_9450f9408460493980ac411eed3b0bda.setContent(html_b3df2d8b20784c0cb2e18dc1d53b8021);
+        
+
+        marker_12821c9e5f454a92bfe9c3532dc07c09.bindPopup(popup_9450f9408460493980ac411eed3b0bda)
+        ;
+
+        
+    
+    
+            var marker_fd493040e6ac4ff89a0523fa9fdcc66f = L.marker(
+                [43.286203, 76.910957],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_42382f9a95d24f5081e9c76801bff875 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_fd493040e6ac4ff89a0523fa9fdcc66f.setIcon(icon_42382f9a95d24f5081e9c76801bff875);
+        
+    
+        var popup_4380758b119843249a5e5407301185b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9823c8f1fe5418dbbea7869980860b1 = $(`<div id="html_c9823c8f1fe5418dbbea7869980860b1" style="width: 100.0%; height: 100.0%;">Бюст Т. Шевченко</div>`)[0];
+            popup_4380758b119843249a5e5407301185b4.setContent(html_c9823c8f1fe5418dbbea7869980860b1);
+        
+
+        marker_fd493040e6ac4ff89a0523fa9fdcc66f.bindPopup(popup_4380758b119843249a5e5407301185b4)
+        ;
+
+        
+    
+    
+            var marker_a85bf874bbac4dc38ce17aa6713fda01 = L.marker(
+                [43.162007, 76.795125],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_5c4748f1cda9459d8105d00ec92b370e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a85bf874bbac4dc38ce17aa6713fda01.setIcon(icon_5c4748f1cda9459d8105d00ec92b370e);
+        
+    
+        var popup_db2bcbfcede542d2908bf183d34b8586 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb6d0330774f492aab825712efe3fd6d = $(`<div id="html_bb6d0330774f492aab825712efe3fd6d" style="width: 100.0%; height: 100.0%;">Река Аксай</div>`)[0];
+            popup_db2bcbfcede542d2908bf183d34b8586.setContent(html_bb6d0330774f492aab825712efe3fd6d);
+        
+
+        marker_a85bf874bbac4dc38ce17aa6713fda01.bindPopup(popup_db2bcbfcede542d2908bf183d34b8586)
+        ;
+
+        
+    
+    
+            var marker_ce376c3d3b174bf1b08bc6231b2aae4a = L.marker(
+                [43.130947, 76.907934],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_483cf236c47c4347a20f413723bf305c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ce376c3d3b174bf1b08bc6231b2aae4a.setIcon(icon_483cf236c47c4347a20f413723bf305c);
+        
+    
+        var popup_dffc91b0ae9a4ec290ef4eeca44c8ccb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_792fe7619b0b48418eda60fc0ffd63e7 = $(`<div id="html_792fe7619b0b48418eda60fc0ffd63e7" style="width: 100.0%; height: 100.0%;">Река Большая Алматинка</div>`)[0];
+            popup_dffc91b0ae9a4ec290ef4eeca44c8ccb.setContent(html_792fe7619b0b48418eda60fc0ffd63e7);
+        
+
+        marker_ce376c3d3b174bf1b08bc6231b2aae4a.bindPopup(popup_dffc91b0ae9a4ec290ef4eeca44c8ccb)
+        ;
+
+        
+    
+    
+            var marker_fa797cf6fd8e46ac8dba51ae178179a4 = L.marker(
+                [43.347901, 78.504252],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_a2e6770111454ee8b716f166473f15fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_fa797cf6fd8e46ac8dba51ae178179a4.setIcon(icon_a2e6770111454ee8b716f166473f15fd);
+        
+    
+        var popup_85b4ad6266b1484483d5612dabcb7f69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7230f697febf464099636aa58ed85475 = $(`<div id="html_7230f697febf464099636aa58ed85475" style="width: 100.0%; height: 100.0%;">Бартогай</div>`)[0];
+            popup_85b4ad6266b1484483d5612dabcb7f69.setContent(html_7230f697febf464099636aa58ed85475);
+        
+
+        marker_fa797cf6fd8e46ac8dba51ae178179a4.bindPopup(popup_85b4ad6266b1484483d5612dabcb7f69)
+        ;
+
+        
+    
+    
+            var marker_72e4edf65e264c22bd01d0fa5d65a3cd = L.marker(
+                [43.415024, 77.587738],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_70351579ac014ca7bf3cf3c8788eab7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_72e4edf65e264c22bd01d0fa5d65a3cd.setIcon(icon_70351579ac014ca7bf3cf3c8788eab7a);
+        
+    
+        var popup_edd9e9bb3c00469081656c54825a550f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7b0de6ea11f4231bde2109447349ecb = $(`<div id="html_f7b0de6ea11f4231bde2109447349ecb" style="width: 100.0%; height: 100.0%;">Река Тургень</div>`)[0];
+            popup_edd9e9bb3c00469081656c54825a550f.setContent(html_f7b0de6ea11f4231bde2109447349ecb);
+        
+
+        marker_72e4edf65e264c22bd01d0fa5d65a3cd.bindPopup(popup_edd9e9bb3c00469081656c54825a550f)
+        ;
+
+        
+    
+    
+            var marker_9b9d2e20d801416cb8fb9a9c96bc9306 = L.marker(
+                [43.258611, 76.953333],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_4bd1b2b5f5c745ad8039eb580bd5da4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9b9d2e20d801416cb8fb9a9c96bc9306.setIcon(icon_4bd1b2b5f5c745ad8039eb580bd5da4c);
+        
+    
+        var popup_00a7a955ac024a3196890641fdd1c85d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6224a1086e3c4fb797828fe182556c83 = $(`<div id="html_6224a1086e3c4fb797828fe182556c83" style="width: 100.0%; height: 100.0%;">Вознесенский кафедральный собор</div>`)[0];
+            popup_00a7a955ac024a3196890641fdd1c85d.setContent(html_6224a1086e3c4fb797828fe182556c83);
+        
+
+        marker_9b9d2e20d801416cb8fb9a9c96bc9306.bindPopup(popup_00a7a955ac024a3196890641fdd1c85d)
+        ;
+
+        
+    
+    
+            var marker_cc62f75650b54407920c98abff0136fd = L.marker(
+                [43.262503, 76.968648],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_93664ce8dec44554891623eb37e219ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_cc62f75650b54407920c98abff0136fd.setIcon(icon_93664ce8dec44554891623eb37e219ec);
+        
+    
+        var popup_75e2aa0605bd4a1480b314414dcc3500 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e86ea1734c2409592107b5009b21c8d = $(`<div id="html_3e86ea1734c2409592107b5009b21c8d" style="width: 100.0%; height: 100.0%;">Парк культуры имени М. Горького</div>`)[0];
+            popup_75e2aa0605bd4a1480b314414dcc3500.setContent(html_3e86ea1734c2409592107b5009b21c8d);
+        
+
+        marker_cc62f75650b54407920c98abff0136fd.bindPopup(popup_75e2aa0605bd4a1480b314414dcc3500)
+        ;
+
+        
+    
+    
+            var marker_3ca50d4d816941d1a4871b8b01e42969 = L.marker(
+                [43.258799, 76.953692],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_f209c0676e494cf68f313dfa7daa30bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3ca50d4d816941d1a4871b8b01e42969.setIcon(icon_f209c0676e494cf68f313dfa7daa30bb);
+        
+    
+        var popup_c46a11db7b0a46b3a26617773f0b5b5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00fbe432778a4e86990cd6c12b03cf0b = $(`<div id="html_00fbe432778a4e86990cd6c12b03cf0b" style="width: 100.0%; height: 100.0%;">Парк имени 28 гвардейцев-панфиловцев</div>`)[0];
+            popup_c46a11db7b0a46b3a26617773f0b5b5d.setContent(html_00fbe432778a4e86990cd6c12b03cf0b);
+        
+
+        marker_3ca50d4d816941d1a4871b8b01e42969.bindPopup(popup_c46a11db7b0a46b3a26617773f0b5b5d)
+        ;
+
+        
+    
+    
+            var marker_60f5820e855144b0a2b15544692fa310 = L.marker(
+                [43.111009, 77.059273],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_d3ce6b9f8b744207a2a70be7d32f90a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_60f5820e855144b0a2b15544692fa310.setIcon(icon_d3ce6b9f8b744207a2a70be7d32f90a0);
+        
+    
+        var popup_70b3bc83033848c3945cfc1c9a9dd47a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ee34cd9421842bc89f4384fb60e5cb6 = $(`<div id="html_0ee34cd9421842bc89f4384fb60e5cb6" style="width: 100.0%; height: 100.0%;">Иле-Алатауский национальный парк</div>`)[0];
+            popup_70b3bc83033848c3945cfc1c9a9dd47a.setContent(html_0ee34cd9421842bc89f4384fb60e5cb6);
+        
+
+        marker_60f5820e855144b0a2b15544692fa310.bindPopup(popup_70b3bc83033848c3945cfc1c9a9dd47a)
+        ;
+
+        
+    
+    
+            var marker_453952dc478843b2af619abc971044e2 = L.marker(
+                [44.333333, 78.433333],
+                {}
+            ).addTo(map_004b73bf9446429c83cf266607fe6de6);
+        
+    
+            var icon_ccf6d6742fb149eabe54575185fcf0ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_453952dc478843b2af619abc971044e2.setIcon(icon_ccf6d6742fb149eabe54575185fcf0ab);
+        
+    
+        var popup_a5f3df08d1aa4f09a7c5ebaabcea10cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6fbd515c2c04cea974662ab654f875f = $(`<div id="html_d6fbd515c2c04cea974662ab654f875f" style="width: 100.0%; height: 100.0%;">Национальный парк Алтын-Эмель</div>`)[0];
+            popup_a5f3df08d1aa4f09a7c5ebaabcea10cd.setContent(html_d6fbd515c2c04cea974662ab654f875f);
+        
+
+        marker_453952dc478843b2af619abc971044e2.bindPopup(popup_a5f3df08d1aa4f09a7c5ebaabcea10cd)
+        ;
+
+        
+    
+</script>
